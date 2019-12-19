@@ -43,9 +43,17 @@
     display: block;
 }
 
+.responsive-menu ul {
+    display: none;
+}
+
 .responsive-menu a {
     color: #fff;
     font-size: 30px;
     padding: 15px;
-    display: block;
+    display: none;
+}
+
+ul {
+    display: none;
 }
