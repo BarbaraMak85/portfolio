@@ -1,0 +1,53 @@
+.component--about-me {
+    display: grid;
+    align-items: center;
+    justify-content: end;
+    background-color: $color-font;
+}
+
+.button-about-me {
+    padding-right: 20px;
+    button {
+        background-color: $color-prymary;
+        width: 200px;
+        height: 47px;
+        color: $color-font;
+        text-transform: uppercase;
+        font-family: 'Raleway', sans-serif;
+        font-size: 16px;
+        font-weight: bold;
+        padding: 5px 5px 5px 5px;
+        outline: none;
+        border: none;
+    }
+}
+
+.text-about-me {
+    width: 500px;
+    padding-right: 20px;
+    .about-me-paragraph {
+        /* autoprefixer: off */
+        -webkit-box-orient: vertical;
+        /* autoprefixer: on */
+        font-family: 'Raleway', sans-serif;
+        font-size: 16px;
+        text-align: justify;
+        -webkit-line-clamp: 14;
+        display: -webkit-box;
+        overflow: hidden;
+        color: $color-text;
+        &.full-line {
+            -webkit-line-clamp: initial;
+            margin-bottom: 20px;
+        }
+    }
+}
+
+.component--about-me-photo {
+    padding-left: 20px;
+    padding-top: 16px;
+    .photo-about-me {
+        width: 452px;
+        height: 337px;
+    }
+}

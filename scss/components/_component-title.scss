@@ -1,0 +1,52 @@
+.component-title {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    margin: 40px 10px 40px 10px;
+    text-transform: uppercase;
+    font-size: 30px;
+    font-weight: bold;
+    font-family: 'Raleway', sans-serif;
+    .decoration-text {
+        .decoration-color-green {
+            color: $color-prymary;
+        }
+    }
+}
+
+.component-title-technology {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 10px 40px 10px;
+    background-color: $color-prymary;
+    color: $color-text;
+    text-transform: uppercase;
+    font-size: 30px;
+    font-weight: bold;
+    font-family: 'Raleway', sans-serif;
+    .decoration-color-white {
+        color: $color-font;
+        text-transform: uppercase;
+        font-size: 30px;
+        font-weight: bold;
+        font-family: 'Raleway', sans-serif;
+    }
+}
+
+.component-title-portfolio {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 10px 40px 10px;
+    background-color: $color-font;
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+    .decoration-color-green {
+        color: $color-text;
+        text-transform: uppercase;
+        font-size: 30px;
+        font-weight: bold;
+        font-family: 'Raleway', sans-serif;
+    }
+}

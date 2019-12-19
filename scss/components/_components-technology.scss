@@ -1,0 +1,31 @@
+.component--technology {
+    height: auto;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: 13% 13% 13% 13% 13% 13%;
+    background-color: $color-prymary;
+    padding-bottom: 60px;
+    .technology {
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        border: solid 4px $color-font;
+        align-items: center;
+        width: 167px;
+        height: 160px;
+        color: $color-font;
+        font-weight: 25px;
+    }
+    .technology {
+        font-size: 60px;
+        transition-duration: 1s;
+        &:hover {
+            background-color: $color-font;
+            color: $color-prymary;
+            transform: scale(1.2);
+            -webkit-transform: scale(1.2);
+            -moz-transform: scale(1.2);
+        }
+    }
+}

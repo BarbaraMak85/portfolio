@@ -1,0 +1,1196 @@
+/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+/* Document
+   ========================================================================== */
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in iOS.
+ */
+html {
+  line-height: 1.15;
+  /* 1 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+}
+
+/* Sections
+     ========================================================================== */
+/**
+   * Remove the margin in all browsers.
+   */
+body {
+  margin: 0;
+}
+
+/**
+   * Render the `main` element consistently in IE.
+   */
+main {
+  display: block;
+}
+
+/**
+   * Correct the font size and margin on `h1` elements within `section` and
+   * `article` contexts in Chrome, Firefox, and Safari.
+   */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/* Grouping content
+     ========================================================================== */
+/**
+   * 1. Add the correct box sizing in Firefox.
+   * 2. Show the overflow in Edge and IE.
+   */
+hr {
+  box-sizing: content-box;
+  /* 1 */
+  height: 0;
+  /* 1 */
+  overflow: visible;
+  /* 2 */
+}
+
+/**
+   * 1. Correct the inheritance and scaling of font size in all browsers.
+   * 2. Correct the odd `em` font sizing in all browsers.
+   */
+pre {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */
+}
+
+/* Text-level semantics
+     ========================================================================== */
+/**
+   * Remove the gray background on active links in IE 10.
+   */
+a {
+  background-color: transparent;
+}
+
+/**
+   * 1. Remove the bottom border in Chrome 57-
+   * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+   */
+abbr[title] {
+  border-bottom: none;
+  /* 1 */
+  text-decoration: underline;
+  /* 2 */
+  text-decoration: underline dotted;
+  /* 2 */
+}
+
+/**
+   * Add the correct font weight in Chrome, Edge, and Safari.
+   */
+b,
+strong {
+  font-weight: bolder;
+}
+
+/**
+   * 1. Correct the inheritance and scaling of font size in all browsers.
+   * 2. Correct the odd `em` font sizing in all browsers.
+   */
+code,
+kbd,
+samp {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */
+}
+
+/**
+   * Add the correct font size in all browsers.
+   */
+small {
+  font-size: 80%;
+}
+
+/**
+   * Prevent `sub` and `sup` elements from affecting the line height in
+   * all browsers.
+   */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+/* Embedded content
+     ========================================================================== */
+/**
+   * Remove the border on images inside links in IE 10.
+   */
+img {
+  border-style: none;
+}
+
+/* Forms
+     ========================================================================== */
+/**
+   * 1. Change the font styles in all browsers.
+   * 2. Remove the margin in Firefox and Safari.
+   */
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit;
+  /* 1 */
+  font-size: 100%;
+  /* 1 */
+  line-height: 1.15;
+  /* 1 */
+  margin: 0;
+  /* 2 */
+}
+
+/**
+   * Show the overflow in IE.
+   * 1. Show the overflow in Edge.
+   */
+button,
+input {
+  /* 1 */
+  overflow: visible;
+}
+
+/**
+   * Remove the inheritance of text transform in Edge, Firefox, and IE.
+   * 1. Remove the inheritance of text transform in Firefox.
+   */
+button,
+select {
+  /* 1 */
+  text-transform: none;
+}
+
+/**
+   * Correct the inability to style clickable types in iOS and Safari.
+   */
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button;
+}
+
+/**
+   * Remove the inner border and padding in Firefox.
+   */
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+/**
+   * Restore the focus styles unset by the previous rule.
+   */
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+/**
+   * Correct the padding in Firefox.
+   */
+fieldset {
+  padding: 0.35em 0.75em 0.625em;
+}
+
+/**
+   * 1. Correct the text wrapping in Edge and IE.
+   * 2. Correct the color inheritance from `fieldset` elements in IE.
+   * 3. Remove the padding so developers are not caught out when they zero out
+   *    `fieldset` elements in all browsers.
+   */
+legend {
+  box-sizing: border-box;
+  /* 1 */
+  color: inherit;
+  /* 2 */
+  display: table;
+  /* 1 */
+  max-width: 100%;
+  /* 1 */
+  padding: 0;
+  /* 3 */
+  white-space: normal;
+  /* 1 */
+}
+
+/**
+   * Add the correct vertical alignment in Chrome, Firefox, and Opera.
+   */
+progress {
+  vertical-align: baseline;
+}
+
+/**
+   * Remove the default vertical scrollbar in IE 10+.
+   */
+textarea {
+  overflow: auto;
+}
+
+/**
+   * 1. Add the correct box sizing in IE 10.
+   * 2. Remove the padding in IE 10.
+   */
+[type="checkbox"],
+[type="radio"] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+}
+
+/**
+   * Correct the cursor style of increment and decrement buttons in Chrome.
+   */
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+   * 1. Correct the odd appearance in Chrome and Safari.
+   * 2. Correct the outline style in Safari.
+   */
+[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  outline-offset: -2px;
+  /* 2 */
+}
+
+/**
+   * Remove the inner padding in Chrome and Safari on macOS.
+   */
+[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+   * 1. Correct the inability to style clickable types in iOS and Safari.
+   * 2. Change font properties to `inherit` in Safari.
+   */
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  /* 1 */
+  font: inherit;
+  /* 2 */
+}
+
+/* Interactive
+     ========================================================================== */
+/*
+   * Add the correct display in Edge, IE 10+, and Firefox.
+   */
+details {
+  display: block;
+}
+
+/*
+   * Add the correct display in all browsers.
+   */
+summary {
+  display: list-item;
+}
+
+/* Misc
+     ========================================================================== */
+/**
+   * Add the correct display in IE 10+.
+   */
+template {
+  display: none;
+}
+
+/**
+   * Add the correct display in IE 10.
+   */
+[hidden] {
+  display: none;
+}
+
+/* Components */
+.component--menu {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 50% 50%;
+      grid-template-columns: 50% 50%;
+  width: 100%;
+  position: fixed;
+  z-index: 999999;
+  background: rgba(0, 0, 0, 0.7);
+}
+
+.component--menu ul {
+  list-style: none;
+}
+
+.component--menu ul a {
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.component--menu li a {
+  font-family: 'Raleway', sans-serif;
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.component--menu .component--menu--list li:hover a {
+  color: #1eb9b1;
+}
+
+.toggle-menu-btn {
+  display: none;
+  position: relative;
+  left: 20px;
+  top: 45px;
+  background: transparent;
+  color: #fff;
+  border: none;
+  font-size: 26px;
+  outline: none;
+}
+
+.responsive-menu {
+  position: fixed;
+  width: 300px;
+  height: calc(100% - 116px);
+  top: 116px;
+  left: 0;
+  background: #000;
+  display: none;
+}
+
+.responsive-menu.visible {
+  display: block;
+}
+
+.responsive-menu a {
+  color: #fff;
+  font-size: 30px;
+  padding: 15px;
+  display: block;
+}
+
+.components--banner {
+  margin-top: 25px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  -ms-grid-rows: 100%;
+      grid-template-rows: 100%;
+  -ms-grid-column-align: center;
+      justify-items: center;
+  -ms-flex-align: center;
+      align-items: center;
+}
+
+.components--banner .components--banner--pafagraph {
+  background: rgba(0, 0, 0, 0.7);
+  padding: 26px 20px 26px 20px;
+  margin-top: 250px;
+  font-size: 70px;
+  color: #1eb9b1;
+  font-family: 'Raleway', sans-serif;
+  font-weight: normal;
+}
+
+.components--banner .components--banner--name {
+  display: -ms-grid;
+  display: grid;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-pack: center;
+      justify-content: center;
+  text-transform: uppercase;
+  color: #ffffff;
+  font-size: 28px;
+  font-family: 'Raleway', sans-serif;
+}
+
+.component--about-me {
+  display: -ms-grid;
+  display: grid;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-pack: end;
+      justify-content: end;
+  background-color: #ffffff;
+}
+
+.button-about-me {
+  padding-right: 20px;
+}
+
+.button-about-me button {
+  background-color: #316f6c;
+  width: 200px;
+  height: 47px;
+  color: #ffffff;
+  text-transform: uppercase;
+  font-family: 'Raleway', sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 5px 5px 5px 5px;
+  outline: none;
+  border: none;
+}
+
+.text-about-me {
+  width: 500px;
+  padding-right: 20px;
+}
+
+.text-about-me .about-me-paragraph {
+  /* autoprefixer: off */
+  -webkit-box-orient: vertical;
+  /* autoprefixer: on */
+  font-family: 'Raleway', sans-serif;
+  font-size: 16px;
+  text-align: justify;
+  -webkit-line-clamp: 14;
+  display: -webkit-box;
+  overflow: hidden;
+  color: #003333;
+}
+
+.text-about-me .about-me-paragraph.full-line {
+  -webkit-line-clamp: initial;
+  margin-bottom: 20px;
+}
+
+.component--about-me-photo {
+  padding-left: 20px;
+  padding-top: 16px;
+}
+
+.component--about-me-photo .photo-about-me {
+  width: 452px;
+  height: 337px;
+}
+
+.component-title {
+  display: -ms-grid;
+  display: grid;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
+  margin: 40px 10px 40px 10px;
+  text-transform: uppercase;
+  font-size: 30px;
+  font-weight: bold;
+  font-family: 'Raleway', sans-serif;
+}
+
+.component-title .decoration-text .decoration-color-green {
+  color: #316f6c;
+}
+
+.component-title-technology {
+  display: -ms-grid;
+  display: grid;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
+  padding: 40px 10px 40px 10px;
+  background-color: #316f6c;
+  color: #003333;
+  text-transform: uppercase;
+  font-size: 30px;
+  font-weight: bold;
+  font-family: 'Raleway', sans-serif;
+}
+
+.component-title-technology .decoration-color-white {
+  color: #ffffff;
+  text-transform: uppercase;
+  font-size: 30px;
+  font-weight: bold;
+  font-family: 'Raleway', sans-serif;
+}
+
+.component-title-portfolio {
+  display: -ms-grid;
+  display: grid;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
+  padding: 40px 10px 40px 10px;
+  background-color: #ffffff;
+  font-family: 'Raleway', sans-serif;
+  font-weight: bold;
+}
+
+.component-title-portfolio .decoration-color-green {
+  color: #003333;
+  text-transform: uppercase;
+  font-size: 30px;
+  font-weight: bold;
+  font-family: 'Raleway', sans-serif;
+}
+
+.component--technology {
+  height: auto;
+  display: -ms-grid;
+  display: grid;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-grid-columns: 13% 13% 13% 13% 13% 13%;
+      grid-template-columns: 13% 13% 13% 13% 13% 13%;
+  background-color: #316f6c;
+  padding-bottom: 60px;
+}
+
+.component--technology .technology {
+  display: -ms-grid;
+  display: grid;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
+  border: solid 4px #ffffff;
+  align-items: center;
+  width: 167px;
+  height: 160px;
+  color: #ffffff;
+  font-weight: 25px;
+}
+
+.component--technology .technology {
+  font-size: 60px;
+  transition-duration: 1s;
+}
+
+.component--technology .technology:hover {
+  background-color: #ffffff;
+  color: #316f6c;
+  transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+  -moz-transform: scale(1.2);
+}
+
+.component--contact {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 100%;
+      grid-template-columns: 100%;
+}
+
+.component--contact .component--contact-topic,
+.component--contact .component--contact--content {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 57%;
+      grid-template-columns: 57%;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-pack: center;
+      justify-content: center;
+}
+
+.component--contact .component--contact-topic .bottom,
+.component--contact .component--contact--content .bottom {
+  border-bottom-width: 0.02px;
+  border-bottom: solid;
+  border-color: #003333;
+}
+
+.component--contact .component--contact-data {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 30% 30%;
+      grid-template-columns: 30% 30%;
+  -ms-flex-pack: center;
+      justify-content: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.component--contact .component--contact-name,
+.component--contact .component--contact-surname {
+  margin: 12px 25px 12px 25px;
+}
+
+.component--contact .component--contact-name .bottom-one,
+.component--contact .component--contact-surname .bottom-one {
+  border-bottom-width: 0.02px;
+  border-bottom: solid;
+  border-color: #003333;
+}
+
+.component--contact .contac-content {
+  margin-top: 25px;
+}
+
+.component--contact .contact-label,
+.component--contact .contact-topic {
+  text-transform: uppercase;
+  color: #316f6c;
+  font-size: 20px;
+  font-family: 'Raleway', sans-serif;
+  display: block;
+  position: relative;
+  top: -30px;
+  transition: 0.2s;
+}
+
+.component--contact .contact-input {
+  border: none;
+  border-bottom: 2px solid #003333;
+  padding: 15px;
+  font-size: 16px;
+  outline: none;
+  width: 100%;
+}
+
+.component--contact .contact-input:focus ~ .contact-label,
+.component--contact .contact-input:valid ~ .contact-label {
+  top: -65px;
+  font-size: 12px;
+}
+
+.component--contact-checkbox {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 57%;
+      grid-template-columns: 57%;
+  -ms-flex-pack: center;
+      justify-content: center;
+}
+
+.component--contact-submit {
+  display: -ms-grid;
+  display: grid;
+  -ms-flex-pack: center;
+      justify-content: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.contact-button {
+  width: 250px;
+  height: 50px;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  background-color: #316f6c;
+  color: #ffffff;
+  text-transform: uppercase;
+  font-family: 'Raleway', sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 5px 5px 5px 5px;
+  outline: none;
+  border: none;
+}
+
+.component--footer {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 33% 33% 33%;
+      grid-template-columns: 33% 33% 33%;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
+  background-color: #000000;
+  color: #ffffff;
+  height: 240px;
+}
+
+.component--footer .component-footer-images {
+  display: -ms-grid;
+  display: grid;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
+}
+
+.component--footer .component-footer-images:hover {
+  color: #316f6c;
+}
+
+.component--footer .component-footer-images .paragpaph-footer-name {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.component--footer .component-footer-images .paragpaph-footer-name:hover {
+  color: #316f6c;
+}
+
+.component--footer .component-footer-images img.icons {
+  display: -ms-grid;
+  display: grid;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
+  justify-self: center;
+  padding-bottom: 15px;
+}
+
+.component--footer .component-footer-images .paragpaph-footer {
+  display: -ms-grid;
+  display: grid;
+  -ms-flex-pack: center;
+      justify-content: center;
+  padding-bottom: 15px;
+  text-transform: uppercase;
+  font-family: 'Raleway', sans-serif;
+  font-size: 18px;
+}
+
+.component--footer .component-footer-images .paragpaph-footer-name {
+  display: -ms-grid;
+  display: grid;
+  -ms-flex-pack: center;
+      justify-content: center;
+  padding-bottom: 18px;
+  font-family: 'Raleway', sans-serif;
+  font-weight: bold;
+  font-size: 15px;
+}
+
+.component--footer .component-footer-images .fa-user,
+.component--footer .component-footer-images .fa-phone-volume,
+.component--footer .component-footer-images .fa-envelope {
+  display: -ms-grid;
+  display: grid;
+  -ms-flex-pack: center;
+      justify-content: center;
+  padding-bottom: 17px;
+  font-size: 30px;
+}
+
+.component-copyright {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 100%;
+      grid-template-columns: 100%;
+}
+
+.component-copyright .copyright {
+  display: -ms-grid;
+  display: grid;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-pack: center;
+      justify-content: center;
+}
+
+.form-icons {
+  display: -ms-grid;
+  display: grid;
+  -ms-flex-pack: end;
+      justify-content: end;
+  -ms-flex-align: center;
+      align-items: center;
+  font-size: 10px;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 45px;
+  cursor: pointer;
+}
+
+.form-icons .icons {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 100%;
+      grid-template-columns: 100%;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-grid-rows: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+  font-size: 10px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: #316f6c;
+  padding: 8px;
+}
+
+.component-portfolio {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 50% 50%;
+      grid-template-columns: 50% 50%;
+}
+
+.component-portfolio .portfolio-box {
+  height: 300px;
+  background-color: #316f6c;
+  display: -ms-grid;
+  display: grid;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+
+.component-portfolio .portfolio-box.portfolio-item-1 {
+  background-image: url(../images/image1.jpg);
+}
+
+.component-portfolio .portfolio-box.portfolio-item-2 {
+  background-image: url(../images/2.jpg);
+}
+
+.component-portfolio .portfolio-box.portfolio-item-3 {
+  background-image: url(../images/3.jpg);
+}
+
+.component-portfolio .portfolio-box.portfolio-item-4 {
+  background-image: url(../images/form.jpg);
+}
+
+.component-portfolio .portfolio-box .hover-content {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  top: -100%;
+  transform: translateY(-50%);
+  transition-duration: 0.5s;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 65% 25%;
+      grid-template-columns: 65% 25%;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-pack: center;
+      justify-content: center;
+}
+
+.component-portfolio .portfolio-box .hover-content .left-content {
+  color: #ffffff;
+  padding: 20px;
+  font-size: 20px;
+  font-family: 'Raleway', sans-serif;
+  text-align: justify;
+  width: 65%;
+}
+
+.component-portfolio .portfolio-box .hover-content .right-content {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 50% 50%;
+      grid-template-columns: 50% 50%;
+  -ms-grid-rows: 1fr;
+      grid-template-rows: 1fr;
+  padding-left: 5px;
+  width: 80%;
+  text-align: center;
+}
+
+.component-portfolio .portfolio-box .hover-content .right-content .link {
+  color: #ffffff;
+  font-size: 60px;
+  margin-right: 20px;
+}
+
+.component-portfolio .portfolio-box:hover .portfolio-box-paragraph {
+  opacity: 0;
+}
+
+.component-portfolio .portfolio-box:hover .hover-content {
+  top: 50%;
+}
+
+.component-copyright {
+  height: 60px;
+  width: 100%;
+  border-top: 1px solid #ffffff;
+  background: #000000;
+}
+
+.component-copyright .paragpaph-copyright {
+  color: #1eb9b1;
+  font-family: 'Raleway', sans-serif;
+  font-size: 15px;
+}
+
+/*  section */
+* {
+  margin: 0;
+}
+
+.section--header {
+  background-image: url("../images/camera-coffee-composition-1509428.jpg");
+  height: 900px;
+  width: 100%;
+  padding: 0;
+  margin: 0 auto;
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+}
+
+.component--menu--list {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 65% 35%;
+      grid-template-columns: 65% 35%;
+  -ms-grid-rows: 1fr;
+      grid-template-rows: 1fr;
+  padding: 0;
+}
+
+.component--menu--list li {
+  justify-self: stretch;
+}
+
+.component--menu--list ul div {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+}
+
+.component--menu--list ul .image-menu {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  padding: 0;
+}
+
+.component--menu--list li a {
+  display: -ms-grid;
+  display: grid;
+}
+
+.component--menu .component--menu--list {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.component--menu ul {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 60% 40%;
+      grid-template-columns: 60% 40%;
+}
+
+.component--menu ul li {
+  display: -ms-grid;
+  display: grid;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-pack: center;
+      justify-content: center;
+  border-bottom: 8px solid transparent;
+}
+
+.component--menu ul li:hover {
+  border-bottom: 8px solid #1eb9b1;
+}
+
+.image-menu {
+  margin-left: 150px;
+}
+
+.section--about-me {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 50% 50%;
+      grid-template-columns: 50% 50%;
+  background-color: #ffffff;
+  margin-bottom: 40px;
+}
+
+.button-about-me {
+  display: -ms-grid;
+  display: grid;
+  -ms-flex-align: end;
+      align-items: end;
+  -ms-flex-pack: end;
+      justify-content: end;
+}
+
+.photo-about-me {
+  display: -ms-grid;
+  display: grid;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-pack: start;
+      justify-content: start;
+}
+
+body {
+  margin: 0;
+}
+
+@media (max-width: 800px) {
+  .component--menu .component--menu--list {
+    display: none;
+  }
+  .responsive-menu {
+    position: fixed;
+    width: 300px;
+    height: calc(100% - 81px);
+    top: 81px;
+    left: 0;
+    background: #000;
+    display: none;
+  }
+  .component--menu {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 45% 65%;
+        grid-template-columns: 45% 65%;
+  }
+  .logo-wrapper {
+    text-align: center;
+  }
+  .logo-wrapper .image-menu {
+    margin: 0;
+  }
+  .toggle-menu-btn {
+    display: inline;
+  }
+  .section--about-me {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 100%;
+        grid-template-columns: 100%;
+  }
+  .text-about-me {
+    padding-right: 0px;
+  }
+  .component--about-me {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 100%;
+        grid-template-columns: 100%;
+    -ms-grid-column-align: center;
+        justify-items: center;
+    margin-bottom: 30px;
+  }
+  .component--about-me-photo {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 100%;
+        grid-template-columns: 100%;
+    -ms-grid-column-align: center;
+        justify-items: center;
+  }
+  .button-about-me {
+    margin-right: 10px;
+  }
+  .component--technology {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 33% 33%;
+        grid-template-columns: 33% 33%;
+    width: 100%;
+  }
+  .component--technology .technology {
+    width: 100%;
+  }
+  .component-portfolio {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 50% 50%;
+    grid-template-columns: 100%;
+  }
+  .component--contact {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 100%;
+        grid-template-columns: 100%;
+  }
+  .component--contact .component--contact-data {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 30% 30%;
+    grid-template-columns: 100%;
+    -ms-flex-pack: center;
+    justify-content: center;
+    width: 100%;
+  }
+  .component--contact .component--contact-name {
+    display: -ms-grid;
+    display: grid;
+    -ms-flex-pack: center;
+        justify-content: center;
+  }
+  .component--contact .component--contact-topic,
+  .component--contact .component--contact--content {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 40%;
+        grid-template-columns: 40%;
+  }
+  .component--contact-checkbox {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 40%;
+        grid-template-columns: 40%;
+    -ms-flex-pack: center;
+        justify-content: center;
+  }
+  label {
+    text-align: justify;
+  }
+  .contact-button {
+    width: 238px;
+  }
+  .component--contact .contact-input {
+    display: -ms-grid;
+    display: grid;
+    width: 85%;
+  }
+  .components--banner--pafagraph {
+    font-size: 40px;
+  }
+  .components--banner--name {
+    font-size: 20px;
+  }
+}
+/*# sourceMappingURL=style.css.map */

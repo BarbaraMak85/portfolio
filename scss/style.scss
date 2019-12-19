@@ -1,0 +1,20 @@
+@import "normalize";
+@import "variables";
+
+/* Components */
+
+@import "components/components_menu";
+@import "components/components_banner";
+@import "components/components_about_me";
+@import "components/component-title";
+@import "components/components-technology";
+@import "components/component-contact";
+@import "components/component-footer";
+@import "components/component-portfolio";
+@import "components/component-copyright";
+
+/*  section */
+
+@import "sections/section_header";
+@import"sections/section_about_me";
+@import "layout";

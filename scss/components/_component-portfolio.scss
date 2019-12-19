@@ -1,0 +1,67 @@
+.component-portfolio {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    .portfolio-box {
+        height: 300px;
+        background-color: $color-prymary;
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        position: relative;
+        overflow: hidden;
+        &.portfolio-item-1 {
+            background-image: url(../images/image1.jpg);
+        }
+        &.portfolio-item-2 {
+            background-image: url(../images/2.jpg);
+        }
+        &.portfolio-item-3 {
+            background-image: url(../images/3.jpg);
+        }
+        &.portfolio-item-4 {
+            background-image: url(../images/form.jpg);
+        }
+        .hover-content {
+            position: absolute;
+            width: 100%;
+            left: 0;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.6);
+            top: -100%;
+            transform: translateY(-50%);
+            transition-duration: 0.5s;
+            display: grid;
+            grid-template-columns: 65% 25%;
+            align-items: center;
+            justify-content: center;
+            .left-content {
+                color: $color-font;
+                padding: 20px;
+                font-size: 20px;
+                font-family: 'Raleway', sans-serif;
+                text-align: justify;
+                width: 65%;
+            }
+            .right-content {
+                display: grid;
+                grid-template-columns: 50% 50%;
+                grid-template-rows: 1fr;
+                padding-left: 5px;
+                width: 80%;
+                text-align: center;
+                .link {
+                    color: $color-font;
+                    font-size: 60px;
+                    margin-right: 20px;
+                }
+            }
+        }
+        &:hover .portfolio-box-paragraph {
+            opacity: 0;
+        }
+        &:hover .hover-content {
+            top: 50%;
+        }
+    }
+}

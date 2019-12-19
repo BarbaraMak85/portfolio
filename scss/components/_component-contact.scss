@@ -1,0 +1,88 @@
+.component--contact {
+    display: grid;
+    grid-template-columns: 100%;
+    .component--contact-topic,
+    .component--contact--content {
+        display: grid;
+        grid-template-columns: 57%;
+        align-items: center;
+        justify-content: center;
+        .bottom {
+            border-bottom-width: 0.02px;
+            border-bottom: solid;
+            border-color: $color-text;
+        }
+    }
+    .component--contact-data {
+        display: grid;
+        grid-template-columns: 30% 30%;
+        justify-content: center;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    .component--contact-name,
+    .component--contact-surname {
+        margin: 12px 25px 12px 25px;
+        .bottom-one {
+            border-bottom-width: 0.02px;
+            border-bottom: solid;
+            border-color: $color-text;
+        }
+    }
+    .contac-content {
+        margin-top: 25px;
+    }
+    .contact-label,
+    .contact-topic {
+        text-transform: uppercase;
+        color: $color-prymary;
+        font-size: 20px;
+        font-family: 'Raleway', sans-serif;
+        display: block;
+        position: relative;
+        top: -30px;
+        transition: 0.2s;
+    }
+    .contact-input {
+        border: none;
+        border-bottom: 2px solid $color-text;
+        padding: 15px;
+        font-size: 16px;
+        outline: none;
+        width: 100%;
+    }
+    .contact-input:focus~.contact-label,
+    .contact-input:valid~.contact-label {
+        top: -65px;
+        font-size: 12px;
+    }
+}
+
+.component--contact-checkbox {
+    display: grid;
+    grid-template-columns: 57%;
+    justify-content: center;
+}
+
+.component--contact-submit {
+    display: grid;
+    justify-content: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.contact-button {
+    width: 250px;
+    height: 50px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    background-color: $color-prymary;
+    color: $color-font;
+    text-transform: uppercase;
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 5px 5px 5px 5px;
+    outline: none;
+    border: none;
+}

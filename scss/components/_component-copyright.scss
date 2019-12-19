@@ -1,0 +1,11 @@
+.component-copyright {
+    height: 60px;
+    width: 100%;
+    border-top: 1px solid $color-font;
+    background: $black;
+    .paragpaph-copyright {
+        color: $color-menu;
+        font-family: 'Raleway', sans-serif;
+        font-size: 15px;
+    }
+}
