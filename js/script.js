@@ -1,4 +1,4 @@
-const header_links = document.querySelectorAll('.component--menu--list a');
+const header_links = document.querySelectorAll('a[data-element]');
 for (link of header_links) {
     link.addEventListener('click', function(e) {
         e.preventDefault();
