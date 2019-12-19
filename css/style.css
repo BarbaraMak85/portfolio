@@ -372,34 +372,34 @@ template {
 .toggle-menu-btn {
   display: none;
   position: relative;
-  left: 20px;
-  top: 45px;
+  left: 45px;
+  top: 25px;
   background: transparent;
-  color: #fff;
+  color: #ffffff;
   border: none;
   font-size: 26px;
   outline: none;
 }
 
-.responsive-menu {
-  position: fixed;
-  width: 300px;
-  height: calc(100% - 116px);
-  top: 116px;
-  left: 0;
-  background: #000;
-  display: none;
-}
-
 .responsive-menu.visible {
   display: block;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.responsive-menu ul {
+  display: none;
 }
 
 .responsive-menu a {
   color: #fff;
   font-size: 30px;
   padding: 15px;
-  display: block;
+  display: none;
+}
+
+ul {
+  display: none;
 }
 
 .components--banner {
@@ -1082,8 +1082,8 @@ body {
   .component--menu {
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: 45% 65%;
-        grid-template-columns: 45% 65%;
+    -ms-grid-columns: 60% 20%;
+        grid-template-columns: 60% 20%;
   }
   .logo-wrapper {
     text-align: center;
@@ -1191,6 +1191,12 @@ body {
   }
   .components--banner--name {
     font-size: 20px;
+  }
+  .components--banner .components--banner--pafagraph {
+    font-size: 38px;
+  }
+  .components--banner .components--banner--pafagraph .components--banner--pafagraph {
+    font-size: 17px;
   }
 }
 /*# sourceMappingURL=style.css.map */
