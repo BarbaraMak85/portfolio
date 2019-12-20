@@ -387,18 +387,13 @@ template {
   text-transform: uppercase;
 }
 
-.responsive-menu ul {
-  display: none;
-}
-
 .responsive-menu a {
   color: #fff;
   font-size: 30px;
   padding: 15px;
-  display: none;
 }
 
-ul {
+.responsive {
   display: none;
 }
 
@@ -1072,12 +1067,43 @@ body {
   }
   .responsive-menu {
     position: fixed;
-    width: 300px;
+    width: 400px;
     height: calc(100% - 81px);
     top: 81px;
     left: 0;
     background: #000;
     display: none;
+    z-index: 9999999;
+  }
+  .responsive-menu .responsive {
+    display: block;
+    padding-top: 45px;
+    list-style: none;
+    padding: 0px;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-rows: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+    padding-top: 20px;
+  }
+  .responsive-menu .responsive a {
+    color: #1eb9b1;
+  }
+  .responsive-list:hover {
+    border-left: 10px solid #1eb9b1;
+    transition: .5s;
+    padding-left: 0px;
+  }
+  .responsive-list {
+    height: 60px;
+    display: -ms-grid;
+    display: grid;
+    -ms-flex-align: start;
+        align-items: start;
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+    color: #1eb9b1;
+    border-left: 10px solid transparent;
   }
   .component--menu {
     display: -ms-grid;
@@ -1186,17 +1212,11 @@ body {
     display: grid;
     width: 85%;
   }
-  .components--banner--pafagraph {
-    font-size: 40px;
-  }
-  .components--banner--name {
-    font-size: 20px;
-  }
   .components--banner .components--banner--pafagraph {
     font-size: 38px;
   }
-  .components--banner .components--banner--pafagraph .components--banner--pafagraph {
-    font-size: 17px;
+  .components--banner .components--banner--pafagraph .components--banner--name {
+    font-size: 20px;
   }
 }
 /*# sourceMappingURL=style.css.map */
