@@ -3,6 +3,8 @@
     display: grid;
     justify-content: center;
     align-items: center;
+    display: grid;
+    grid-template-rows: 100%;
     grid-template-columns: 13% 13% 13% 13% 13% 13%;
     background-color: $color-prymary;
     padding-bottom: 60px;

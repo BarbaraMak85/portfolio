@@ -566,6 +566,9 @@ template {
       justify-content: center;
   -ms-flex-align: center;
       align-items: center;
+  display: grid;
+  -ms-grid-rows: 100%;
+      grid-template-rows: 100%;
   -ms-grid-columns: 13% 13% 13% 13% 13% 13%;
       grid-template-columns: 13% 13% 13% 13% 13% 13%;
   background-color: #316f6c;
@@ -1061,19 +1064,19 @@ body {
   margin: 0;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 1000px) {
   .component--menu .component--menu--list {
     display: none;
   }
   .responsive-menu {
     position: fixed;
     width: 400px;
-    height: calc(100% - 81px);
-    top: 81px;
+    height: calc(100% - 100px);
+    top: 100px;
     left: 0;
-    background: #000;
     display: none;
     z-index: 9999999;
+    background: rgba(0, 0, 0, 0.7);
   }
   .responsive-menu .responsive {
     display: block;
@@ -1089,6 +1092,20 @@ body {
   .responsive-menu .responsive a {
     color: #1eb9b1;
   }
+  .image-menu {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-column-align: center;
+        justify-items: center;
+    padding-top: 10px;
+  }
+  .fa-bars {
+    display: -ms-grid;
+    display: grid;
+    -ms-flex-pack: start;
+        justify-content: start;
+    margin-bottom: 10px;
+  }
   .responsive-list:hover {
     border-left: 10px solid #1eb9b1;
     transition: .5s;
@@ -1101,15 +1118,109 @@ body {
     -ms-flex-align: start;
         align-items: start;
     font-family: 'Raleway', sans-serif;
-    font-weight: bold;
+    font-weight: normal;
     color: #1eb9b1;
     border-left: 10px solid transparent;
   }
   .component--menu {
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: 60% 20%;
-        grid-template-columns: 60% 20%;
+    -ms-grid-columns: 44% 56%;
+        grid-template-columns: 44% 56%;
+    height: 100px;
+  }
+  .logo-wrapper {
+    text-align: center;
+  }
+  .logo-wrapper .image-menu {
+    margin: 0;
+  }
+  .toggle-menu-btn {
+    display: inline;
+  }
+  .component--technology {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 20% 20% 20%;
+        grid-template-columns: 20% 20% 20%;
+    -ms-grid-rows: 50% 50%;
+        grid-template-rows: 50% 50%;
+    -ms-flex-pack: center;
+        justify-content: center;
+    padding-right: 16px;
+    -ms-flex-align: center;
+        align-items: center;
+    justify-content: center;
+  }
+  .component--technology .technology {
+    margin-top: 10px;
+  }
+}
+
+@media (max-width: 800px) {
+  .component--menu .component--menu--list {
+    display: none;
+  }
+  .responsive-menu {
+    position: fixed;
+    width: 400px;
+    height: calc(100% - 100px);
+    top: 100px;
+    left: 0;
+    display: none;
+    z-index: 9999999;
+    background: rgba(0, 0, 0, 0.7);
+  }
+  .responsive-menu .responsive {
+    display: block;
+    padding-top: 45px;
+    list-style: none;
+    padding: 0px;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-rows: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+    padding-top: 20px;
+  }
+  .responsive-menu .responsive a {
+    color: #1eb9b1;
+  }
+  .image-menu {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-column-align: center;
+        justify-items: center;
+    padding-top: 10px;
+  }
+  .fa-bars {
+    display: -ms-grid;
+    display: grid;
+    -ms-flex-pack: start;
+        justify-content: start;
+    margin-bottom: 10px;
+  }
+  .responsive-list:hover {
+    border-left: 10px solid #1eb9b1;
+    transition: .5s;
+    padding-left: 0px;
+  }
+  .responsive-list {
+    height: 60px;
+    display: -ms-grid;
+    display: grid;
+    -ms-flex-align: start;
+        align-items: start;
+    font-family: 'Raleway', sans-serif;
+    font-weight: normal;
+    color: #1eb9b1;
+    border-left: 10px solid transparent;
+  }
+  .component--menu {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 44% 56%;
+        grid-template-columns: 44% 56%;
+    height: 100px;
   }
   .logo-wrapper {
     text-align: center;
@@ -1152,12 +1263,10 @@ body {
   .component--technology {
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: 33% 33%;
-        grid-template-columns: 33% 33%;
-    width: 100%;
   }
   .component--technology .technology {
     width: 100%;
+    height: 124px;
   }
   .component-portfolio {
     display: -ms-grid;
@@ -1171,35 +1280,50 @@ body {
     -ms-grid-columns: 100%;
         grid-template-columns: 100%;
   }
+  .component--contact .contact-label,
+  .component--contact .contact-topic {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 100%;
+        grid-template-columns: 100%;
+    -ms-grid-column-align: center;
+        justify-items: center;
+    padding-right: 40px;
+    padding-left: 40px;
+  }
   .component--contact .component--contact-data {
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: 30% 30%;
-    grid-template-columns: 100%;
-    -ms-flex-pack: center;
-    justify-content: center;
-    width: 100%;
+    -ms-grid-columns: 100%;
+        grid-template-columns: 100%;
   }
   .component--contact .component--contact-name {
     display: -ms-grid;
     display: grid;
-    -ms-flex-pack: center;
-        justify-content: center;
+    -ms-grid-columns: 100%;
+        grid-template-columns: 100%;
+    -ms-grid-column-align: center;
+        justify-items: center;
+    padding-left: 20px;
+    padding-right: 20px;
   }
   .component--contact .component--contact-topic,
   .component--contact .component--contact--content {
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: 40%;
-        grid-template-columns: 40%;
+    -ms-grid-columns: 100%;
+        grid-template-columns: 100%;
+    padding-top: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
   }
   .component--contact-checkbox {
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: 40%;
-        grid-template-columns: 40%;
-    -ms-flex-pack: center;
-        justify-content: center;
+    -ms-grid-columns: 80%;
+        grid-template-columns: 80%;
+    -ms-grid-column-align: start;
+        justify-items: start;
   }
   label {
     text-align: justify;
@@ -1210,7 +1334,6 @@ body {
   .component--contact .contact-input {
     display: -ms-grid;
     display: grid;
-    width: 85%;
   }
   .components--banner .components--banner--pafagraph {
     font-size: 38px;
