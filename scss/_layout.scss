@@ -66,16 +66,35 @@
             .toggle-menu-btn {
                 display: inline;
             }
+            .text-about-me {
+                display: grid;
+                width: 100%;
+                justify-self: center;
+            }
+            .about-me-paragraph {
+                margin-left: 40px;
+            }
+            .component--about-me-photo {
+                padding-top: 0px;
+            }
+            .component--about-me-photo .photo-about-me {
+                width: 400px;
+                height: 300px;
+                .images-about-me {
+                    display: grid;
+                    justify-content: center;
+                }
+            }
             .component--technology {
                 display: grid;
                 grid-template-columns: 20% 20% 20%;
                 grid-template-rows: 50% 50%;
                 justify-content: center;
-                padding-right: 16px;
                 align-items: center;
                 justify-content: center;
                 .technology {
-                    margin-top: 10px;
+                    margin-top: 8px;
+                    border: solid 2px #ffffff;
                 }
             }
         }
@@ -149,7 +168,8 @@
                 grid-template-columns: 100%;
             }
             .text-about-me {
-                padding-right: 0px;
+                padding-right: 20px;
+                margin-left: 28px;
             }
             .component--about-me {
                 display: grid;
@@ -161,15 +181,25 @@
                 display: grid;
                 grid-template-columns: 100%;
                 justify-items: center;
+                .images-about-me {
+                    margin-right: 10px;
+                }
             }
             .button-about-me {
                 margin-right: 10px;
             }
             .component--technology {
                 display: grid;
+                grid-template-columns: 21% 21% 21%;
+                grid-template-rows: 50% 50%;
+                justify-content: center;
+                align-items: center;
+                justify-content: center;
                 .technology {
-                    width: 100%;
-                    height: 124px;
+                    margin-top: 8px;
+                    border: solid 2px #ffffff;
+                    margin-right: 2px;
+                    margin-bottom: 5px;
                 }
             }
             .component-portfolio {
@@ -227,5 +257,88 @@
                 .components--banner--name {
                     font-size: 20px;
                 }
+            }
+        }
+        
+        @media (max-width: 320px) {
+            .component--menu {
+                display: grid;
+                grid-template-columns: 34% 66%;
+                height: 74px;
+            }
+            .component--menu .component--menu--list {
+                display: none;
+            }
+            .responsive-menu {
+                position: fixed;
+                width: 400px;
+                height: calc(100% - 100px);
+                top: 100px;
+                left: 0;
+                display: none;
+                z-index: 9999999;
+                background: rgba(0, 0, 0, 0.7);
+                .responsive {
+                    display: block;
+                    padding-top: 45px;
+                    list-style: none;
+                    padding: 0px;
+                    display: grid;
+                    grid-template-rows: 1fr 1fr 1fr 1fr;
+                    padding-top: 20px;
+                    a {
+                        color: $color-menu;
+                        font-size: 20px;
+                    }
+                }
+            }
+            .image-menu {
+                display: grid;
+                justify-items: center;
+                padding-top: 10px;
+            }
+            .fa-bars {
+                display: grid;
+                justify-content: start;
+                margin-bottom: 10px;
+            }
+            .responsive-list:hover {
+                border-left: 10px solid $color-menu;
+                transition: .5s;
+                padding-left: 0px;
+            }
+            .responsive-list {
+                height: 60px;
+                display: grid;
+                align-items: start;
+                font-family: 'Raleway', sans-serif;
+                font-weight: normal;
+                color: $color-menu;
+                border-left: 10px solid transparent;
+            }
+            .component--menu {
+                display: grid;
+                grid-template-columns: 44% 56%;
+                height: 100px;
+            }
+            .logo-wrapper .image-menu {
+                width: 65px;
+                display: grid;
+                margin-top: 20px;
+            }
+            .toggle-menu-btn {
+                display: inline;
+                font-size: 20px;
+                margin-bottom: 44px;
+            }
+            .components--banner .components--banner--pafagraph {
+                font-size: 20px;
+                .components--banner--name {
+                    font-size: 10px;
+                }
+            }
+            .section-about-me {
+                grid-template-columns: 100%;
+                grid-template-rows: 1fr 1fr;
             }
         }
