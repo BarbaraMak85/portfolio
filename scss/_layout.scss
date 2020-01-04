@@ -2,6 +2,16 @@
             margin: 0;
         }
         
+        @media(max-width: 1300px) {
+            .component--technology {
+                grid-template-columns: 33% 33% 33%;
+                grid-template-rows: auto;
+            }
+            .component--technology .technology {
+                margin: 40px auto 0 auto;
+            }
+        }
+        
         @media (max-width: 1000px) {
             .component--menu .component--menu--list {
                 display: none;
@@ -83,18 +93,6 @@
                 .images-about-me {
                     display: grid;
                     justify-content: center;
-                }
-            }
-            .component--technology {
-                display: grid;
-                grid-template-columns: 20% 20% 20%;
-                grid-template-rows: 50% 50%;
-                justify-content: center;
-                align-items: center;
-                justify-content: center;
-                .technology {
-                    margin-top: 8px;
-                    border: solid 2px #ffffff;
                 }
             }
         }
@@ -188,20 +186,6 @@
             .button-about-me {
                 margin-right: 10px;
             }
-            .component--technology {
-                display: grid;
-                grid-template-columns: 21% 21% 21%;
-                grid-template-rows: 50% 50%;
-                justify-content: center;
-                align-items: center;
-                justify-content: center;
-                .technology {
-                    margin-top: 8px;
-                    border: solid 2px #ffffff;
-                    margin-right: 2px;
-                    margin-bottom: 5px;
-                }
-            }
             .component-portfolio {
                 display: grid;
                 -ms-grid-columns: 50% 50%;
@@ -260,6 +244,24 @@
             }
         }
         
+        @media(max-width: 640px) {
+            .component--technology {
+                grid-template-columns: 50% 50%;
+                grid-template-rows: auto;
+            }
+        }
+        
+        @media(max-width: 480px) {
+            .component--about-me-photo .photo-about-me {
+                width: 100%;
+                height: auto;
+            }
+            .component--technology {
+                grid-template-columns: 100%;
+                grid-template-rows: auto;
+            }
+        }
+        
         @media (max-width: 320px) {
             .component--menu {
                 display: grid;
@@ -271,7 +273,7 @@
             }
             .responsive-menu {
                 position: fixed;
-                width: 400px;
+                width: 100%;
                 height: calc(100% - 100px);
                 top: 100px;
                 left: 0;
