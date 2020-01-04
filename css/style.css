@@ -1366,6 +1366,12 @@ body {
     -ms-grid-rows: auto;
         grid-template-rows: auto;
   }
+  .component--footer {
+    height: auto;
+    -ms-grid-columns: 100%;
+        grid-template-columns: 100%;
+    padding-top: 30px;
+  }
 }
 
 @media (max-width: 480px) {
