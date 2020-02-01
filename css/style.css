@@ -1372,6 +1372,14 @@ body {
         grid-template-columns: 100%;
     padding-top: 30px;
   }
+  .component-title.with-background {
+    text-align: center;
+    font-size: 20px;
+  }
+  .component-title .decoration-text .decoration-color-white {
+    text-align: center;
+    font-size: 20px;
+  }
 }
 
 @media (max-width: 480px) {
@@ -1394,6 +1402,14 @@ body {
   .fab,
   .fas {
     font-size: 34px;
+  }
+  .component-title.with-background {
+    text-align: center;
+    font-size: 20px;
+  }
+  .component-title .decoration-text .decoration-color-white {
+    text-align: center;
+    font-size: 20px;
   }
 }
 
@@ -1502,6 +1518,14 @@ body {
   .fab,
   .fas {
     font-size: 30px;
+  }
+  .component-title.with-background {
+    text-align: center;
+    font-size: 20px;
+  }
+  .component-title .decoration-text .decoration-color-white {
+    text-align: center;
+    font-size: 20px;
   }
 }
 /*# sourceMappingURL=style.css.map */

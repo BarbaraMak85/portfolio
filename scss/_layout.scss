@@ -1,389 +1,413 @@
-        body {
-            margin: 0;
-        }
-        
-        @media(max-width: 1300px) {
-            .component--technology {
-                grid-template-columns: 33% 33% 33%;
-                grid-template-rows: auto;
-            }
-            .component--technology .technology {
-                margin: 40px auto 0 auto;
-            }
-            .fab,
-            .fas {
-                font-size: 27px;
-            }
-        }
-        
-        @media (max-width: 1000px) {
-            .component--menu .component--menu--list {
-                display: none;
-            }
-            .responsive-menu {
-                position: fixed;
-                width: 400px;
-                height: calc(100% - 100px);
-                top: 100px;
-                left: 0;
-                display: none;
-                z-index: 9999999;
-                background: rgba(0, 0, 0, 0.7);
-                .responsive {
-                    display: block;
-                    padding-top: 45px;
-                    list-style: none;
-                    padding: 0px;
-                    display: grid;
-                    grid-template-rows: 1fr 1fr 1fr 1fr;
-                    padding-top: 20px;
-                    a {
-                        color: $color-menu;
-                    }
-                }
-            }
-            .image-menu {
-                display: grid;
-                justify-items: center;
-                padding-top: 10px;
-            }
-            .fa-bars {
-                display: grid;
-                justify-content: start;
-                margin-bottom: 10px;
-            }
-            .responsive-list:hover {
-                border-left: 10px solid $color-menu;
-                transition: .5s;
-                padding-left: 0px;
-            }
-            .responsive-list {
-                height: 60px;
-                display: grid;
-                align-items: start;
-                font-family: 'Raleway', sans-serif;
-                font-weight: normal;
+body {
+    margin: 0;
+}
+
+@media(max-width: 1300px) {
+    .component--technology {
+        grid-template-columns: 33% 33% 33%;
+        grid-template-rows: auto;
+    }
+    .component--technology .technology {
+        margin: 40px auto 0 auto;
+    }
+    .fab,
+    .fas {
+        font-size: 27px;
+    }
+}
+
+@media (max-width: 1000px) {
+    .component--menu .component--menu--list {
+        display: none;
+    }
+    .responsive-menu {
+        position: fixed;
+        width: 400px;
+        height: calc(100% - 100px);
+        top: 100px;
+        left: 0;
+        display: none;
+        z-index: 9999999;
+        background: rgba(0, 0, 0, 0.7);
+        .responsive {
+            display: block;
+            padding-top: 45px;
+            list-style: none;
+            padding: 0px;
+            display: grid;
+            grid-template-rows: 1fr 1fr 1fr 1fr;
+            padding-top: 20px;
+            a {
                 color: $color-menu;
-                border-left: 10px solid transparent;
-            }
-            .component--menu {
-                display: grid;
-                grid-template-columns: 44% 56%;
-                height: 100px;
-            }
-            .logo-wrapper {
-                text-align: center;
-            }
-            .logo-wrapper .image-menu {
-                margin: 0;
-            }
-            .toggle-menu-btn {
-                display: inline;
-            }
-            .text-about-me {
-                display: grid;
-                width: 100%;
-                justify-self: center;
-            }
-            .about-me-paragraph {
-                margin-left: 40px;
-            }
-            .component--about-me-photo {
-                padding-top: 0px;
-            }
-            .component--about-me-photo .photo-about-me {
-                width: 400px;
-                height: 300px;
-                .images-about-me {
-                    display: grid;
-                    justify-content: center;
-                }
-            }
-            .component-portfolio .portfolio-box .hover-content .left-content {
-                font-size: 10px;
-            }
-            .right-content {
-                font-size: 18px;
-            }
-            .fab,
-            .fas {
-                font-size: 22px;
             }
         }
-        
-        @media (max-width: 800px) {
-            .component--about-me-photo {
-                padding-left: 0;
-            }
-            .about-me-paragraph {
-                margin: 0;
-                padding: 0 20px;
-            }
-            .component--menu .component--menu--list {
-                display: none;
-            }
-            .responsive-menu {
-                position: fixed;
-                width: 400px;
-                height: calc(100% - 100px);
-                top: 100px;
-                left: 0;
-                display: none;
-                z-index: 9999999;
-                background: rgba(0, 0, 0, 0.7);
-                .responsive {
-                    display: block;
-                    padding-top: 45px;
-                    list-style: none;
-                    padding: 0px;
-                    display: grid;
-                    grid-template-rows: 1fr 1fr 1fr 1fr;
-                    padding-top: 20px;
-                    a {
-                        color: $color-menu;
-                    }
-                }
-            }
-            .image-menu {
-                display: grid;
-                justify-items: center;
-                padding-top: 10px;
-            }
-            .fa-bars {
-                display: grid;
-                justify-content: start;
-                margin-bottom: 10px;
-            }
-            .responsive-list:hover {
-                border-left: 10px solid $color-menu;
-                transition: .5s;
-                padding-left: 0px;
-            }
-            .responsive-list {
-                height: 60px;
-                display: grid;
-                align-items: start;
-                font-family: 'Raleway', sans-serif;
-                font-weight: normal;
+    }
+    .image-menu {
+        display: grid;
+        justify-items: center;
+        padding-top: 10px;
+    }
+    .fa-bars {
+        display: grid;
+        justify-content: start;
+        margin-bottom: 10px;
+    }
+    .responsive-list:hover {
+        border-left: 10px solid $color-menu;
+        transition: .5s;
+        padding-left: 0px;
+    }
+    .responsive-list {
+        height: 60px;
+        display: grid;
+        align-items: start;
+        font-family: 'Raleway', sans-serif;
+        font-weight: normal;
+        color: $color-menu;
+        border-left: 10px solid transparent;
+    }
+    .component--menu {
+        display: grid;
+        grid-template-columns: 44% 56%;
+        height: 100px;
+    }
+    .logo-wrapper {
+        text-align: center;
+    }
+    .logo-wrapper .image-menu {
+        margin: 0;
+    }
+    .toggle-menu-btn {
+        display: inline;
+    }
+    .text-about-me {
+        display: grid;
+        width: 100%;
+        justify-self: center;
+    }
+    .about-me-paragraph {
+        margin-left: 40px;
+    }
+    .component--about-me-photo {
+        padding-top: 0px;
+    }
+    .component--about-me-photo .photo-about-me {
+        width: 400px;
+        height: 300px;
+        .images-about-me {
+            display: grid;
+            justify-content: center;
+        }
+    }
+    .component-portfolio .portfolio-box .hover-content .left-content {
+        font-size: 10px;
+    }
+    .right-content {
+        font-size: 18px;
+    }
+    .fab,
+    .fas {
+        font-size: 22px;
+    }
+}
+
+@media (max-width: 800px) {
+    .component--about-me-photo {
+        padding-left: 0;
+    }
+    .about-me-paragraph {
+        margin: 0;
+        padding: 0 20px;
+    }
+    .component--menu .component--menu--list {
+        display: none;
+    }
+    .responsive-menu {
+        position: fixed;
+        width: 400px;
+        height: calc(100% - 100px);
+        top: 100px;
+        left: 0;
+        display: none;
+        z-index: 9999999;
+        background: rgba(0, 0, 0, 0.7);
+        .responsive {
+            display: block;
+            padding-top: 45px;
+            list-style: none;
+            padding: 0px;
+            display: grid;
+            grid-template-rows: 1fr 1fr 1fr 1fr;
+            padding-top: 20px;
+            a {
                 color: $color-menu;
-                border-left: 10px solid transparent;
-            }
-            .component--menu {
-                display: grid;
-                grid-template-columns: 44% 56%;
-                height: 100px;
-            }
-            .logo-wrapper {
-                text-align: center;
-            }
-            .logo-wrapper .image-menu {
-                margin: 0;
-            }
-            .toggle-menu-btn {
-                display: inline;
-            }
-            .section--about-me {
-                display: grid;
-                grid-template-columns: 100%;
-            }
-            .text-about-me {
-                padding: 0;
-            }
-            .component--about-me {
-                display: grid;
-                grid-template-columns: 100%;
-                justify-items: center;
-                margin-bottom: 30px;
-            }
-            .component--about-me-photo {
-                display: grid;
-                grid-template-columns: 100%;
-                justify-items: center;
-                padding: 0 20px;
-            }
-            .button-about-me {
-                margin-right: 10px;
-            }
-            .component-portfolio {
-                display: grid;
-                -ms-grid-columns: 50% 50%;
-                grid-template-columns: 100%;
-            }
-            .component--contact {
-                display: grid;
-                grid-template-columns: 100%;
-            }
-            .component--contact .contact-label,
-            .component--contact .contact-topic {
-                display: grid;
-                grid-template-columns: 100%;
-                justify-items: center;
-                padding-right: 40px;
-                padding-left: 40px;
-            }
-            .component--contact .component--contact-data {
-                display: grid;
-                grid-template-columns: 100%;
-            }
-            .component--contact .component--contact-name {
-                display: grid;
-                grid-template-columns: 100%;
-                justify-items: center;
-                padding-left: 20px;
-                padding-right: 20px;
-            }
-            .component--contact .component--contact-topic,
-            .component--contact .component--contact--content {
-                display: grid;
-                grid-template-columns: 100%;
-                padding-top: 20px;
-                padding-left: 10px;
-                padding-right: 10px;
-            }
-            .component--contact-checkbox {
-                display: grid;
-                grid-template-columns: 80%;
-                justify-items: start;
-            }
-            label {
-                text-align: justify;
-            }
-            .contact-button {
-                width: 238px;
-            }
-            .component--contact .contact-input {
-                display: grid;
-            }
-            .components--banner .components--banner--pafagraph {
-                font-size: 38px;
-                .components--banner--name {
-                    font-size: 20px;
-                }
             }
         }
-        
-        @media(max-width: 640px) {
-            .component--technology {
-                grid-template-columns: 50% 50%;
-                grid-template-rows: auto;
-            }
-            .component--footer {
-                height: auto;
-                grid-template-columns: 100%;
-                padding-top: 30px;
-            }
+    }
+    .image-menu {
+        display: grid;
+        justify-items: center;
+        padding-top: 10px;
+    }
+    .fa-bars {
+        display: grid;
+        justify-content: start;
+        margin-bottom: 10px;
+    }
+    .responsive-list:hover {
+        border-left: 10px solid $color-menu;
+        transition: .5s;
+        padding-left: 0px;
+    }
+    .responsive-list {
+        height: 60px;
+        display: grid;
+        align-items: start;
+        font-family: 'Raleway', sans-serif;
+        font-weight: normal;
+        color: $color-menu;
+        border-left: 10px solid transparent;
+    }
+    .component--menu {
+        display: grid;
+        grid-template-columns: 44% 56%;
+        height: 100px;
+    }
+    .logo-wrapper {
+        text-align: center;
+    }
+    .logo-wrapper .image-menu {
+        margin: 0;
+    }
+    .toggle-menu-btn {
+        display: inline;
+    }
+    .section--about-me {
+        display: grid;
+        grid-template-columns: 100%;
+    }
+    .text-about-me {
+        padding: 0;
+    }
+    .component--about-me {
+        display: grid;
+        grid-template-columns: 100%;
+        justify-items: center;
+        margin-bottom: 30px;
+    }
+    .component--about-me-photo {
+        display: grid;
+        grid-template-columns: 100%;
+        justify-items: center;
+        padding: 0 20px;
+    }
+    .button-about-me {
+        margin-right: 10px;
+    }
+    .component-portfolio {
+        display: grid;
+        -ms-grid-columns: 50% 50%;
+        grid-template-columns: 100%;
+    }
+    .component--contact {
+        display: grid;
+        grid-template-columns: 100%;
+    }
+    .component--contact .contact-label,
+    .component--contact .contact-topic {
+        display: grid;
+        grid-template-columns: 100%;
+        justify-items: center;
+        padding-right: 40px;
+        padding-left: 40px;
+    }
+    .component--contact .component--contact-data {
+        display: grid;
+        grid-template-columns: 100%;
+    }
+    .component--contact .component--contact-name {
+        display: grid;
+        grid-template-columns: 100%;
+        justify-items: center;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .component--contact .component--contact-topic,
+    .component--contact .component--contact--content {
+        display: grid;
+        grid-template-columns: 100%;
+        padding-top: 20px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .component--contact-checkbox {
+        display: grid;
+        grid-template-columns: 80%;
+        justify-items: start;
+    }
+    label {
+        text-align: justify;
+    }
+    .contact-button {
+        width: 238px;
+    }
+    .component--contact .contact-input {
+        display: grid;
+    }
+    .components--banner .components--banner--pafagraph {
+        font-size: 38px;
+        .components--banner--name {
+            font-size: 20px;
         }
-        
-        @media(max-width: 480px) {
-            .component--about-me-photo .photo-about-me {
-                width: 100%;
-                height: auto;
-            }
-            .component--technology {
-                grid-template-columns: 100%;
-                grid-template-rows: auto;
-            }
-            .component-portfolio .portfolio-box .hover-content .left-content {
-                font-size: 10px;
-            }
-            .right-content {
-                font-size: 18px;
-            }
-            .fab,
-            .fas {
-                font-size: 34px;
-            }
-        }
-        
-        @media (max-width: 320px) {
-            .component--menu {
-                display: grid;
-                grid-template-columns: 34% 66%;
-                height: 74px;
-            }
-            .component--menu .component--menu--list {
-                display: none;
-            }
-            .responsive-menu {
-                position: fixed;
-                width: 100%;
-                height: calc(100% - 100px);
-                top: 100px;
-                left: 0;
-                display: none;
-                z-index: 9999999;
-                background: rgba(0, 0, 0, 0.7);
-                .responsive {
-                    display: block;
-                    padding-top: 45px;
-                    list-style: none;
-                    padding: 0px;
-                    display: grid;
-                    grid-template-rows: 1fr 1fr 1fr 1fr;
-                    padding-top: 20px;
-                    a {
-                        color: $color-menu;
-                        font-size: 20px;
-                    }
-                }
-            }
-            .image-menu {
-                display: grid;
-                justify-items: center;
-                padding-top: 10px;
-            }
-            .fa-bars {
-                display: grid;
-                justify-content: start;
-                margin-bottom: 10px;
-            }
-            .responsive-list:hover {
-                border-left: 10px solid $color-menu;
-                transition: .5s;
-                padding-left: 0px;
-            }
-            .responsive-list {
-                height: 60px;
-                display: grid;
-                align-items: start;
-                font-family: 'Raleway', sans-serif;
-                font-weight: normal;
+    }
+}
+
+@media(max-width: 640px) {
+    .component--technology {
+        grid-template-columns: 50% 50%;
+        grid-template-rows: auto;
+    }
+    .component--footer {
+        height: auto;
+        grid-template-columns: 100%;
+        padding-top: 30px;
+    }
+    .component-title.with-background {
+        text-align: center;
+        font-size: 20px;
+    }
+    .component-title .decoration-text .decoration-color-white {
+        text-align: center;
+        font-size: 20px;
+    }
+}
+
+@media(max-width: 480px) {
+    .component--about-me-photo .photo-about-me {
+        width: 100%;
+        height: auto;
+    }
+    .component--technology {
+        grid-template-columns: 100%;
+        grid-template-rows: auto;
+    }
+    .component-portfolio .portfolio-box .hover-content .left-content {
+        font-size: 10px;
+    }
+    .right-content {
+        font-size: 18px;
+    }
+    .fab,
+    .fas {
+        font-size: 34px;
+    }
+    .component-title.with-background {
+        text-align: center;
+        font-size: 20px;
+    }
+    .component-title .decoration-text .decoration-color-white {
+        text-align: center;
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 320px) {
+    .component--menu {
+        display: grid;
+        grid-template-columns: 34% 66%;
+        height: 74px;
+    }
+    .component--menu .component--menu--list {
+        display: none;
+    }
+    .responsive-menu {
+        position: fixed;
+        width: 100%;
+        height: calc(100% - 100px);
+        top: 100px;
+        left: 0;
+        display: none;
+        z-index: 9999999;
+        background: rgba(0, 0, 0, 0.7);
+        .responsive {
+            display: block;
+            padding-top: 45px;
+            list-style: none;
+            padding: 0px;
+            display: grid;
+            grid-template-rows: 1fr 1fr 1fr 1fr;
+            padding-top: 20px;
+            a {
                 color: $color-menu;
-                border-left: 10px solid transparent;
-            }
-            .component--menu {
-                display: grid;
-                grid-template-columns: 44% 56%;
-                height: 100px;
-            }
-            .logo-wrapper .image-menu {
-                width: 65px;
-                display: grid;
-                margin-top: 20px;
-            }
-            .toggle-menu-btn {
-                display: inline;
                 font-size: 20px;
-                margin-bottom: 44px;
-            }
-            .components--banner .components--banner--pafagraph {
-                font-size: 20px;
-                .components--banner--name {
-                    font-size: 10px;
-                }
-            }
-            .section-about-me {
-                grid-template-columns: 100%;
-                grid-template-rows: 1fr 1fr;
-            }
-            .component-portfolio .portfolio-box .hover-content .left-content {
-                font-size: 10px;
-            }
-            .right-content {
-                font-size: 14px;
-            }
-            .fab,
-            .fas {
-                font-size: 30px;
             }
         }
+    }
+    .image-menu {
+        display: grid;
+        justify-items: center;
+        padding-top: 10px;
+    }
+    .fa-bars {
+        display: grid;
+        justify-content: start;
+        margin-bottom: 10px;
+    }
+    .responsive-list:hover {
+        border-left: 10px solid $color-menu;
+        transition: .5s;
+        padding-left: 0px;
+    }
+    .responsive-list {
+        height: 60px;
+        display: grid;
+        align-items: start;
+        font-family: 'Raleway', sans-serif;
+        font-weight: normal;
+        color: $color-menu;
+        border-left: 10px solid transparent;
+    }
+    .component--menu {
+        display: grid;
+        grid-template-columns: 44% 56%;
+        height: 100px;
+    }
+    .logo-wrapper .image-menu {
+        width: 65px;
+        display: grid;
+        margin-top: 20px;
+    }
+    .toggle-menu-btn {
+        display: inline;
+        font-size: 20px;
+        margin-bottom: 44px;
+    }
+    .components--banner .components--banner--pafagraph {
+        font-size: 20px;
+        .components--banner--name {
+            font-size: 10px;
+        }
+    }
+    .section-about-me {
+        grid-template-columns: 100%;
+        grid-template-rows: 1fr 1fr;
+    }
+    .component-portfolio .portfolio-box .hover-content .left-content {
+        font-size: 10px;
+    }
+    .right-content {
+        font-size: 14px;
+    }
+    .fab,
+    .fas {
+        font-size: 30px;
+    }
+    .component-title.with-background {
+        text-align: center;
+        font-size: 20px;
+    }
+    .component-title .decoration-text .decoration-color-white {
+        text-align: center;
+        font-size: 20px;
+    }
+}
