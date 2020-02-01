@@ -446,6 +446,7 @@ template {
 
 .button-about-me {
   padding-right: 20px;
+  cursor: pointer;
 }
 
 .button-about-me button {
@@ -460,6 +461,7 @@ template {
   padding: 5px 5px 5px 5px;
   outline: none;
   border: none;
+  cursor: pointer;
 }
 
 .text-about-me {
@@ -512,49 +514,19 @@ template {
   font-family: 'Raleway', sans-serif;
 }
 
+.component-title.with-background {
+  background-color: #316f6c;
+  color: #003333;
+  margin: 0;
+  padding: 40px 10px 40px 10px;
+}
+
 .component-title .decoration-text .decoration-color-green {
   color: #316f6c;
 }
 
-.component-title-technology {
-  display: -ms-grid;
-  display: grid;
-  -ms-flex-pack: center;
-      justify-content: center;
-  -ms-flex-align: center;
-      align-items: center;
-  padding: 40px 10px 40px 10px;
-  background-color: #316f6c;
-  color: #003333;
-  text-transform: uppercase;
-  font-size: 30px;
-  font-weight: bold;
-  font-family: 'Raleway', sans-serif;
-}
-
-.component-title-technology .decoration-color-white {
+.component-title .decoration-text .decoration-color-white {
   color: #ffffff;
-  text-transform: uppercase;
-  font-size: 30px;
-  font-weight: bold;
-  font-family: 'Raleway', sans-serif;
-}
-
-.component-title-portfolio {
-  display: -ms-grid;
-  display: grid;
-  -ms-flex-pack: center;
-      justify-content: center;
-  -ms-flex-align: center;
-      align-items: center;
-  padding: 40px 10px 40px 10px;
-  background-color: #ffffff;
-  font-family: 'Raleway', sans-serif;
-  font-weight: bold;
-}
-
-.component-title-portfolio .decoration-color-green {
-  color: #003333;
   text-transform: uppercase;
   font-size: 30px;
   font-weight: bold;
@@ -591,6 +563,7 @@ template {
   height: 160px;
   color: #ffffff;
   font-weight: 25px;
+  cursor: pointer;
 }
 
 .component--technology .technology {
@@ -630,6 +603,7 @@ template {
   border-bottom-width: 0.02px;
   border-bottom: solid;
   border-color: #003333;
+  cursor: pointer;
 }
 
 .component--contact .component--contact-data {
@@ -718,6 +692,7 @@ template {
   padding: 5px 5px 5px 5px;
   outline: none;
   border: none;
+  cursor: pointer;
 }
 
 .component--footer {
@@ -765,6 +740,7 @@ template {
       align-items: center;
   justify-self: center;
   padding-bottom: 15px;
+  cursor: pointer;
 }
 
 .component--footer .component-footer-images .paragpaph-footer {
@@ -776,6 +752,7 @@ template {
   text-transform: uppercase;
   font-family: 'Raleway', sans-serif;
   font-size: 18px;
+  cursor: pointer;
 }
 
 .component--footer .component-footer-images .paragpaph-footer-name {
@@ -787,6 +764,7 @@ template {
   font-family: 'Raleway', sans-serif;
   font-weight: bold;
   font-size: 15px;
+  cursor: pointer;
 }
 
 .component--footer .component-footer-images .fa-user,
@@ -798,6 +776,7 @@ template {
       justify-content: center;
   padding-bottom: 17px;
   font-size: 30px;
+  cursor: pointer;
 }
 
 .component-copyright {
@@ -876,7 +855,7 @@ template {
 }
 
 .component-portfolio .portfolio-box.portfolio-item-2 {
-  background-image: url(../images/2.jpg);
+  background-image: url(../images/quiz.jpg);
 }
 
 .component-portfolio .portfolio-box.portfolio-item-3 {
@@ -924,7 +903,9 @@ template {
       grid-template-rows: 1fr;
   padding-left: 5px;
   width: 80%;
+  font-size: 20px;
   text-align: center;
+  font-family: 'Raleway', sans-serif;
 }
 
 .component-portfolio .portfolio-box .hover-content .right-content .link {
@@ -978,6 +959,7 @@ template {
   -ms-grid-rows: 1fr;
       grid-template-rows: 1fr;
   padding: 0;
+  cursor: pointer;
 }
 
 .component--menu--list li {
@@ -1077,6 +1059,10 @@ body {
   .component--technology .technology {
     margin: 40px auto 0 auto;
   }
+  .fab,
+  .fas {
+    font-size: 27px;
+  }
 }
 
 @media (max-width: 1000px) {
@@ -1175,9 +1161,22 @@ body {
     -ms-flex-pack: center;
         justify-content: center;
   }
+  .component-portfolio .portfolio-box .hover-content .left-content {
+    font-size: 10px;
+  }
+  .right-content {
+    font-size: 18px;
+  }
+  .fab,
+  .fas {
+    font-size: 22px;
+  }
 }
 
 @media (max-width: 800px) {
+  .component--about-me-photo {
+    padding-left: 0;
+  }
   .about-me-paragraph {
     margin: 0;
     padding: 0 20px;
@@ -1280,9 +1279,7 @@ body {
         grid-template-columns: 100%;
     -ms-grid-column-align: center;
         justify-items: center;
-  }
-  .component--about-me-photo .images-about-me {
-    margin-right: 10px;
+    padding: 0 20px;
   }
   .button-about-me {
     margin-right: 10px;
@@ -1388,6 +1385,16 @@ body {
     -ms-grid-rows: auto;
         grid-template-rows: auto;
   }
+  .component-portfolio .portfolio-box .hover-content .left-content {
+    font-size: 10px;
+  }
+  .right-content {
+    font-size: 18px;
+  }
+  .fab,
+  .fas {
+    font-size: 34px;
+  }
 }
 
 @media (max-width: 320px) {
@@ -1485,6 +1492,16 @@ body {
         grid-template-columns: 100%;
     -ms-grid-rows: 1fr 1fr;
         grid-template-rows: 1fr 1fr;
+  }
+  .component-portfolio .portfolio-box .hover-content .left-content {
+    font-size: 10px;
+  }
+  .right-content {
+    font-size: 14px;
+  }
+  .fab,
+  .fas {
+    font-size: 30px;
   }
 }
 /*# sourceMappingURL=style.css.map */

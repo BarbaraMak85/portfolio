@@ -26,6 +26,7 @@
             align-items: center;
             justify-self: center;
             padding-bottom: 15px;
+            cursor: pointer;
         }
         .paragpaph-footer {
             display: grid;
@@ -34,6 +35,7 @@
             text-transform: uppercase;
             font-family: 'Raleway', sans-serif;
             font-size: 18px;
+            cursor: pointer;
         }
         .paragpaph-footer-name {
             display: grid;
@@ -42,6 +44,7 @@
             font-family: 'Raleway', sans-serif;
             font-weight: bold;
             font-size: 15px;
+            cursor: pointer;
         }
         .fa-user,
         .fa-phone-volume,
@@ -50,6 +53,7 @@
             justify-content: center;
             padding-bottom: 17px;
             font-size: 30px;
+            cursor: pointer;
         }
     }
 }

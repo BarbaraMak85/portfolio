@@ -7,6 +7,7 @@
 
 .button-about-me {
     padding-right: 20px;
+    cursor: pointer;
     button {
         background-color: $color-prymary;
         width: 200px;
@@ -19,6 +20,7 @@
         padding: 5px 5px 5px 5px;
         outline: none;
         border: none;
+        cursor: pointer;
     }
 }
 

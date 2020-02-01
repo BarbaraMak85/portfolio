@@ -10,6 +10,10 @@
             .component--technology .technology {
                 margin: 40px auto 0 auto;
             }
+            .fab,
+            .fas {
+                font-size: 27px;
+            }
         }
         
         @media (max-width: 1000px) {
@@ -95,9 +99,22 @@
                     justify-content: center;
                 }
             }
+            .component-portfolio .portfolio-box .hover-content .left-content {
+                font-size: 10px;
+            }
+            .right-content {
+                font-size: 18px;
+            }
+            .fab,
+            .fas {
+                font-size: 22px;
+            }
         }
         
         @media (max-width: 800px) {
+            .component--about-me-photo {
+                padding-left: 0;
+            }
             .about-me-paragraph {
                 margin: 0;
                 padding: 0 20px;
@@ -182,9 +199,7 @@
                 display: grid;
                 grid-template-columns: 100%;
                 justify-items: center;
-                .images-about-me {
-                    margin-right: 10px;
-                }
+                padding: 0 20px;
             }
             .button-about-me {
                 margin-right: 10px;
@@ -268,6 +283,16 @@
                 grid-template-columns: 100%;
                 grid-template-rows: auto;
             }
+            .component-portfolio .portfolio-box .hover-content .left-content {
+                font-size: 10px;
+            }
+            .right-content {
+                font-size: 18px;
+            }
+            .fab,
+            .fas {
+                font-size: 34px;
+            }
         }
         
         @media (max-width: 320px) {
@@ -350,5 +375,15 @@
             .section-about-me {
                 grid-template-columns: 100%;
                 grid-template-rows: 1fr 1fr;
+            }
+            .component-portfolio .portfolio-box .hover-content .left-content {
+                font-size: 10px;
+            }
+            .right-content {
+                font-size: 14px;
+            }
+            .fab,
+            .fas {
+                font-size: 30px;
             }
         }

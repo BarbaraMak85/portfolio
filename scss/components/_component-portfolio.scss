@@ -14,7 +14,7 @@
             background-image: url(../images/image1.jpg);
         }
         &.portfolio-item-2 {
-            background-image: url(../images/2.jpg);
+            background-image: url(../images/quiz.jpg);
         }
         &.portfolio-item-3 {
             background-image: url(../images/3.jpg);
@@ -49,7 +49,9 @@
                 grid-template-rows: 1fr;
                 padding-left: 5px;
                 width: 80%;
+                font-size: 20px;
                 text-align: center;
+                font-family: 'Raleway', sans-serif;
                 .link {
                     color: $color-font;
                     font-size: 60px;

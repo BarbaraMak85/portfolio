@@ -6,6 +6,8 @@ for (link of header_links) {
         const linkElement = this.dataset.element;
         const targetElement = document.querySelector(linkElement);
 
+        window.location.href = linkElement;
+
         window.scroll({
             behavior: 'smooth',
             left: 0,

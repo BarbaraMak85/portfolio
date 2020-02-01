@@ -11,6 +11,7 @@
             border-bottom-width: 0.02px;
             border-bottom: solid;
             border-color: $color-text;
+            cursor: pointer;
         }
     }
     .component--contact-data {
@@ -85,4 +86,5 @@
     padding: 5px 5px 5px 5px;
     outline: none;
     border: none;
+    cursor: pointer;
 }
