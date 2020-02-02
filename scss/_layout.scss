@@ -12,7 +12,7 @@ body {
     }
     .fab,
     .fas {
-        font-size: 27px;
+        font-size: 50px;
     }
 }
 
@@ -107,7 +107,7 @@ body {
     }
     .fab,
     .fas {
-        font-size: 22px;
+        font-size: 50px;
     }
 }
 
@@ -220,6 +220,7 @@ body {
         justify-items: center;
         padding-right: 40px;
         padding-left: 40px;
+        font-size: 14px;
     }
     .component--contact .component--contact-data {
         display: grid;
@@ -239,6 +240,7 @@ body {
         padding-top: 20px;
         padding-left: 10px;
         padding-right: 10px;
+        font-size: 14px;
     }
     .component--contact-checkbox {
         display: grid;
@@ -247,6 +249,7 @@ body {
     }
     label {
         text-align: justify;
+        font-size: 14px;
     }
     .contact-button {
         width: 238px;
@@ -259,6 +262,10 @@ body {
         .components--banner--name {
             font-size: 20px;
         }
+    }
+    .fab,
+    .fas {
+        font-size: 50px;
     }
 }
 
@@ -280,6 +287,10 @@ body {
         text-align: center;
         font-size: 20px;
     }
+    .fab,
+    .fas {
+        font-size: 42px;
+    }
 }
 
 @media(max-width: 480px) {
@@ -292,10 +303,10 @@ body {
         grid-template-rows: auto;
     }
     .component-portfolio .portfolio-box .hover-content .left-content {
-        font-size: 10px;
+        font-size: 12px;
     }
     .right-content {
-        font-size: 18px;
+        font-size: 14px;
     }
     .fab,
     .fas {
@@ -307,6 +318,13 @@ body {
     }
     .component-title .decoration-text .decoration-color-white {
         text-align: center;
+        font-size: 20px;
+    }
+    .component--contact .contact-label,
+    .component--contact .contact-topic {
+        font-size: 12px;
+    }
+    .component-title {
         font-size: 20px;
     }
 }
@@ -393,7 +411,7 @@ body {
         grid-template-rows: 1fr 1fr;
     }
     .component-portfolio .portfolio-box .hover-content .left-content {
-        font-size: 10px;
+        font-size: 12px;
     }
     .right-content {
         font-size: 14px;
@@ -408,6 +426,13 @@ body {
     }
     .component-title .decoration-text .decoration-color-white {
         text-align: center;
+        font-size: 20px;
+    }
+    .component--contact .contact-label,
+    .component--contact .contact-topic {
+        font-size: 12px;
+    }
+    .component-title {
         font-size: 20px;
     }
 }
